@@ -1,4 +1,4 @@
-﻿namespace vorting_system
+﻿namespace alphaVote
 {
     partial class Form1
     {
