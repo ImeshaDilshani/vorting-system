@@ -149,7 +149,6 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Online Vorting System";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Form1
             // 
