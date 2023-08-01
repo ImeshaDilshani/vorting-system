@@ -19,63 +19,65 @@ namespace alphaVote.Views
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
-            bunifuSnackbar1.Show(this, "Welcome to AlphaVote", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
+            SnackMsg.Show(this, "Welcome to AlphaVote", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
         }
 
-        private void bunifuIconButton1_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void bunifuIconButton1_MouseHover(object sender, EventArgs e)
+        private void BtnExit_MouseHover(object sender, EventArgs e)
         {
             BtnExit.BackgroundColor = Color.FromArgb(196, 43, 28);
             
         }
 
-        private void bunifuIconButton2_Click(object sender, EventArgs e)
+        private void BtnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState= FormWindowState.Minimized;
         }
 
-        private void bunifuIconButton2_MouseHover(object sender, EventArgs e)
+        private void BtnMinimize_MouseHover(object sender, EventArgs e)
         {
             BtnMinimize.BackgroundColor = Color.FromArgb(23, 29, 33);
         }
 
-        private void bunifuButton2_Click(object sender, EventArgs e)
+        private void BtnHome_Click(object sender, EventArgs e)
         {
-            bunifuPages1.SetPage(0);
+            PageComponent.SetPage(0);
         }
 
-        private void bunifuButton3_Click(object sender, EventArgs e)
+        private void BtnEvents_Click(object sender, EventArgs e)
         {
-            bunifuPages1.SetPage(1);
+            PageComponent.SetPage(1);
         }
 
-        private void bunifuButton4_Click(object sender, EventArgs e)
+        private void BtnCandidates_Click(object sender, EventArgs e)
         {
-            bunifuPages1.SetPage(2);
+            PageComponent.SetPage(2);
         }
 
-        private void bunifuButton5_Click(object sender, EventArgs e)
+        private void BtnVoters_Click(object sender, EventArgs e)
         {
-            bunifuPages1.SetPage(3);
+            PageComponent.SetPage(3);
         }
 
-        private void bunifuButton6_Click(object sender, EventArgs e)
+        private void BtnResults_Click(object sender, EventArgs e)
         {
-            bunifuPages1.SetPage(4);
+            PageComponent.SetPage(4);
         }
 
-        private void bunifuButton7_Click(object sender, EventArgs e)
+        private void BtnSettings_Click(object sender, EventArgs e)
         {
-            bunifuPages1.SetPage(5);
+            PageComponent.SetPage(5);
         }
 
-        private void bunifuButton1_Click(object sender, EventArgs e)
+        private void BtnLogout_Click(object sender, EventArgs e)
         {
             //logout
         }
+
+   
     }
 }
